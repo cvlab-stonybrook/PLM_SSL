@@ -15,7 +15,8 @@ Training scripts can be found under ```tools``` folder, e.g. to conduct our PLM_
 ```
 python -W ignore -mtorch.distributed.launch --nproc_per_node=4 --master_port=60123 tools/train.py configs/PLM_SSL/r18_bs256_ep200_lambda_1.0.py --work_dir [output_directory] --seed 0 --launcher pytorch
 ```
-For downstream segmentation, please install [detectron2](https://github.com/facebookresearch/detectron2). Our training and evaluation code is ```segmentation/detection/train_net.py``` e.g.
+
+For downstream segmentation, please install [detectron2](https://github.com/facebookresearch/detectron2). You can use ```segmentation/detection/train_net.py``` to train and evaluate on downstream dataset, e.g.
 ```
 python tools/extract_backbone_weights.py  $weights_dir/epoch_200.pth  $weights_dir/segmentation/backbone.pth
 
