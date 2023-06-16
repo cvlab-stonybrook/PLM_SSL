@@ -1,6 +1,6 @@
 # Precise Location Matching Improves Dense Contrastive Learning in Digital Pathology
 
-Pytorch implementation for the locally supervised learning framework described in the paper [Precise Location Matching Improves Dense Contrastive Learning in Digital Pathology](https://arxiv.org/abs/2212.12105)(_IPMI 2023_).
+Pytorch implementation for the locally supervised learning framework described in the paper [Precise Location Matching Improves Dense Contrastive Learning in Digital Pathology](https://link.springer.com/chapter/10.1007/978-3-031-34048-2_60), (_IPMI 2023_, [arxiv](https://arxiv.org/abs/2212.12105)).
 
 <div>
   <img src="imgs/overview.png" width="100%"  alt="The overview of our framework."/>
@@ -39,10 +39,12 @@ Most of our code was borrowed from [OpenSelfSup](https://github.com/open-mmlab/O
 ## Citation
 If you use the code or results in your research, please use the following BibTeX entry.  
 ```
-@article{zhang2022precise,
-  title={Precise Location Matching Improves Dense Contrastive Learning in Digital Pathology},
+@inproceedings{zhang2023precise,
+  title={Precise location matching improves dense contrastive learning in digital pathology},
   author={Zhang, Jingwei and Kapse, Saarthak and Ma, Ke and Prasanna, Prateek and Vakalopoulou, Maria and Saltz, Joel and Samaras, Dimitris},
-  journal={arXiv preprint arXiv:2212.12105},
-  year={2022}
+  booktitle={International Conference on Information Processing in Medical Imaging},
+  pages={783--794},
+  year={2023},
+  organization={Springer}
 }
 ```
